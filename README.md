@@ -86,4 +86,11 @@ Agora localhost:8181 = 192.168.0.135:3389
 ssh -L 8181:192.168.0.135:3389 aluno@192.168.0.135 -L 8181:192.168.0.135:3389 aluno@192.168.0.135
 
 Caso o ssh esteja configurado em outra porta
-ssh aluno@192.168.0.135 -p 1212
+ssh aluno@192.168.0.135 -p 1212  
+
+Dinamico
+ssh -D 1080 aluno@192.168.15.73 -p 1212
+
+Reverso
+ssh -R 8181:localhost:3389 aluno@192.168.0.14
+
