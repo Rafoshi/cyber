@@ -3,10 +3,13 @@
 ## Pacotes necessários
 apt update
 apt install net-tools
+sudo apt-get install openssh-server
 
 ## Ip
 ip -br -c a
 netstat -nltp
+service ssh status
+service apache status
 
 Config
 
@@ -67,3 +70,10 @@ curl -A "Aluno" http://<ip-da-vm>/agent/
 curl -X POST -d "user=teste" http://<ip-da-vm>/posttest/
 curl -o nome.txt https:google.com.br
 curl -I http://<ip-da-vm> >> salvaaqui.txt
+
+## SSH
+acessando
+ssh aluno@192.168.53.12
+
+Transferindo arquivos
+scp arquivotranferir aluno@192.168.10.30:/home/aluno/pastassh
