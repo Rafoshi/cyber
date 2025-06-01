@@ -77,3 +77,6 @@ ssh aluno@192.168.53.12
 
 Transferindo arquivos
 scp arquivotranferir aluno@192.168.10.30:/home/aluno/pastassh
+
+Caso a porta 3389 esteja bloqueada
+ssh -L 8181:192.168.0.135:3389 aluno@192.168.0.135
