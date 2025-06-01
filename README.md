@@ -94,3 +94,7 @@ ssh -D 1080 aluno@192.168.15.73 -p 1212
 Reverso
 ssh -R 8181:localhost:3389 aluno@192.168.0.14
 
+chmod
+chmod u+x script.sh
+chmod o-w file.txt
+chmod g+rw file.txt
