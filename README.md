@@ -57,3 +57,13 @@ service apache2 restart
 vi /etc/apache2/conf-enabled/security.conf
 (25)ServerTokens Prod
 (36)ServerSignature Off
+
+## CURL 
+curl -u username:password https://example.com
+curl http://<ip-da-vm>
+curl -I http://<ip-da-vm>
+3. curl -A (User-Agent)
+curl -A "Aluno" http://<ip-da-vm>/agent/
+curl -X POST -d "user=teste" http://<ip-da-vm>/posttest/
+curl -o nome.txt https:google.com.br
+curl -I http://<ip-da-vm> >> salvaaqui.txt
