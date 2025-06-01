@@ -69,7 +69,7 @@ curl -I http://<ip-da-vm>
 curl -A "Aluno" http://<ip-da-vm>/agent/
 curl -X POST -d "user=teste" http://<ip-da-vm>/posttest/
 curl -o nome.txt https:google.com.br
-curl -I http://<ip-da-vm> >> salvaaqui.txt
+curl -V http://<ip-da-vm> >> salvaaqui.txt
 
 ## SSH
 acessando
