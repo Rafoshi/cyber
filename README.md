@@ -80,6 +80,7 @@ scp arquivotranferir aluno@192.168.10.30:/home/aluno/pastassh
 
 Caso a porta 3389 esteja bloqueada
 ssh -L 8181:192.168.0.135:3389 aluno@192.168.0.135
+Agora localhost:8181 = 192.168.0.135:3389
 
 Caso o ssh esteja configurado em outra porta
 ssh aluno@192.168.0.135 -p 1212
