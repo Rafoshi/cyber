@@ -28,6 +28,7 @@ grep -E "" rockyou.txt
 
 ## Hydra
 hydra -l aluno -P rockyou.txt ssh://192.168.15.73
+hydra -L users.txt -p fiap ssh://192.168.15.73
 
 ## Config apache
 vi /etc/apache2/apache2.conf
