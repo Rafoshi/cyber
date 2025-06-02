@@ -112,3 +112,6 @@ cd /home/aluno
 cd .ssh/
 cat authorized_keys
 
+## Configurações ssh
+#PermitRootLogin prohibit-password > proibe logar root
+PermitRootLogin yes > habilita logar root
