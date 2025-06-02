@@ -10,6 +10,7 @@ ip -br -c a
 netstat -nltp
 service ssh status
 service apache status
+ss -nltp
 
 Config
 
@@ -77,6 +78,7 @@ ssh aluno@192.168.53.12
 
 Transferindo arquivos
 scp arquivotranferir aluno@192.168.10.30:/home/aluno/pastassh
+scp -P 1212 arquivotest.txt aluno@192.168.15.73:/home/aluno/
 
 Caso a porta 3389 esteja bloqueada
 ssh -L 8181:192.168.0.135:3389 aluno@192.168.0.135
@@ -98,3 +100,10 @@ chmod
 chmod u+x script.sh
 chmod o-w file.txt
 chmod g+rw file.txt
+
+## SSH com Chave
+ssh-keygen -t rsa
+cd ~/.ssh
+
+copiando para o servidor
+ssh-copy-id -p 1234 aluno@192.168.15.73    
