@@ -107,3 +107,8 @@ cd ~/.ssh
 
 copiando para o servidor
 ssh-copy-id -p 1234 aluno@192.168.15.73    
+
+cd /home/aluno
+cd .ssh/
+cat authorized_keys
+
