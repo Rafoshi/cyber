@@ -115,3 +115,11 @@ cat authorized_keys
 ## Configurações ssh
 #PermitRootLogin prohibit-password > proibe logar root
 PermitRootLogin yes > habilita logar root
+PasswordAuthentication no > não permite logar com senha
+HostbasedAuthentication no > desabilite login automatico em host confiavel
+X11Forwarding no > desabilita abrir programas no cliente rodando no servidor
+MaxAuthTries 3 > limites tentativas de login
+
+Configurar Timeouts de Sessão
+ClientAliveInterval 300
+ClientAliveCountMax 0
