@@ -29,6 +29,7 @@ WorldList:
 cd /usr/share/worldlists
 sudo gunzip rockyou.txt.gz
 grep -E "" rockyou.txt
+/usr/share/wordlist/metasploit/
 
 ## Hydra
 hydra -l aluno -P rockyou.txt ssh://192.168.15.73
